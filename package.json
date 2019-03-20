@@ -1,0 +1,29 @@
+{
+  "name": "diff-app",
+  "version": "1.0.0",
+  "description": "simple app to check directory difference",
+  "main": "index.js",
+  "scripts": {
+    "build:dev": "webpack --mode development",
+    "build:prod": "webpack --mode production",
+    "dev": "webpack-dev-server --open",
+    "start": "serve -s public",
+    "heroku-postbuild": "npm run build:prod"
+  },
+  "author": "Denys Lahoda",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.4.0",
+    "@babel/preset-env": "^7.4.1",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.5",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-dev-server": "^3.2.1"
+  },
+  "dependencies": {
+    "serve": "^10.1.2"
+  }
+}
